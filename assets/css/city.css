@@ -1,0 +1,35 @@
+body {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    /*color: #333333;*/
+    line-height: 35px;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border:1px solid #ccc;
+    border-radius: 5px
+}
+.container .title{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+.container table td a {
+    margin:0 5px;
+    color: #333333;
+    text-decoration: none;
+    display: inline-block;
+}
+.container table td a:hover{
+    color:#00ae66;
+    text-decoration: underline;
+}
+span.right{
+    float: right;
+}
+span.gray{
+    color: #ccc;
+}

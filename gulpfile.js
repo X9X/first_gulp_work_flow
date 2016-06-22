@@ -16,13 +16,14 @@ gulp.task('reloadPage',function(){
 
 gulp.task('connect', function() {
     connect.server({
+        port: 8888,
         livereload: true
     });
 });
 
 gulp.task('watchAssets', function() {
     gulp.watch('assets/sass/*.scss', ['compileSass']);
-    gulp.watch('assets/html/*.html', ['reloadPage']);
+    gulp.watch(['assets/html/*.html','assets/css/*.css'], ['reloadPage']);
 });
 
 gulp.task('default', ['watchAssets','connect']);
