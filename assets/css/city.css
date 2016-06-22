@@ -17,13 +17,16 @@ body {
     border-bottom: 1px solid #eee;
     padding-bottom: 5px;
 }
-.container table td a {
+.container table td{
+    vertical-align: top;
+}
+.container a {
     margin:0 5px;
     color: #333333;
     text-decoration: none;
     display: inline-block;
 }
-.container table td a:hover{
+.container  a:hover{
     color:#00ae66;
     text-decoration: underline;
 }
@@ -32,4 +35,7 @@ span.right{
 }
 span.gray{
     color: #ccc;
+}
+.title span.gray{
+    margin-right: 10px;
 }
